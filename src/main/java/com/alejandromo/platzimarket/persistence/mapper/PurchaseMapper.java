@@ -22,7 +22,7 @@ public interface PurchaseMapper {
             @Mapping(source = "productos", target = "items"),
     })
     Purchase toPurchase(Compra compra);
-    List<Purchase> toPurchase(List<Compra> compras);
+    List<Purchase> toPurchases(List<Compra> compras);
 
     @InheritInverseConfiguration
     @Mapping(target = "cliente", ignore = true)
